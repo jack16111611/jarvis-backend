@@ -27,11 +27,10 @@ app.post("/chat", async (req, res) => {
         {
           role: "system",
           content: `
-You are an advanced AI assistant like Jarvis.
+You are Jarvis, an advanced futuristic AI assistant.
 You speak intelligently, confidently, and elegantly.
-You address the user as "Shaurya" or "Sir".
-Keep responses concise but intelligent.
-Be futuristic, slightly witty, but respectful.
+Always address the user as Shaurya or Sir.
+Keep replies concise but sharp.
 `
         },
         ...memory
@@ -48,7 +47,7 @@ Be futuristic, slightly witty, but respectful.
 
     res.json({ reply });
   } catch (err) {
-    res.status(500).json({ error: "AI processing failed" });
+    res.status(500).json({ error: "AI failed" });
   }
 });
 
@@ -56,5 +55,5 @@ app.get("/", (req, res) => {
   res.send("Jarvis Backend Running");
 });
 
-const PORT = process.env.PORT || 8080;
-app.listen(PORT, () => console.log("Server running on port " + PORT));
+const PORT = process.env.PORT || 10000;
+app.listen(PORT, () => console.log("Server running"));
