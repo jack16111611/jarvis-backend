@@ -1,7 +1,7 @@
 {
   "name": "jarvis-backend",
   "version": "1.0.0",
-  "description": "Shaurya's Futuristic AI Assistant",
+  "description": "Shaurya's AI Assistant",
   "main": "server.js",
   "type": "module",
   "scripts": {
